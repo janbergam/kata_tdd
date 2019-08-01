@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class StringCalculator {
 	
 	public int add(String numbers) {
-		if (numbers.equals(""))
+		if (numbers.isEmpty())
 			return 0;
 		if (numbers.matches("[0-9]+(((\\n)|(\\,))[0-9]+)*")) { 
 			return Arrays.stream(numbers.replaceAll("\n", ",").split(",")).mapToInt(Integer::parseInt).sum();

@@ -34,5 +34,8 @@ public class StringCalculatorTest {
 			int result = new StringCalculator().add(";\n2,3\n11;12");
 			assertThat(result).isEqualTo(28);
 		}
+		// write new test for thrown exception with message 
+		// assertThatThrownBy(() -> {throw new NullPointerException("Hello World");
+		//  }).hasMessage("Hello World!");
 }
 
